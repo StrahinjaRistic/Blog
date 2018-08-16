@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1>blogovi</h1>
+    <h1>dodavanje</h1>
   </div>
 </template>
 
