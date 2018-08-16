@@ -1,5 +1,7 @@
 <template>
-  <p>proba bla</p>
+  <div id="app">
+    <h1>borisova izmena</h1>
+  </div>
 </template>
 
 <script>
