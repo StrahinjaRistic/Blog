@@ -4,7 +4,7 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
-          <input id="naslov" type="text" length="50" class="validate" v-model="naslov"></input>
+          <input id="naslov" type="text" length="10" class="validate" v-model="naslov"></input>
           <span class="character-counter black-text" style="float: right; font-size: 12px; height: 1px;"></span>
           <label for="naslov">Naslov bloga</label>
 
@@ -13,7 +13,7 @@
     <div class="row">
       <div class="input-field col s12">
       <i class="material-icons prefix">mode_edit</i>
-      <textarea id="textArea" class="materialize-textarea" length="500" v-model="text" ></textarea>
+      <textarea id="textArea" class="materialize-textarea" length="120" v-model="text" ></textarea>
       <label for="textArea">Blog</label>
       <button class="btn waves-effect waves-light" type="submit" name="action" @click.prevent="dodajBlog">Dodaj Blog</button>
 

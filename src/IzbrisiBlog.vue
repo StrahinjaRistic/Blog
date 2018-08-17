@@ -4,7 +4,7 @@
     <ul class="collection with-header">
       <li class="collection-header"><h4>Lista blogova</h4></li>
       <li class="collection-item" v-for="blog in blogList">{{blog.blo_naslov}}<button class="material-icons secondary-content" @click="obrisiBlog(blog.blo_id)">delete</button>
-        <!-- <button @click="obrisiBlog(blog.blo_id)">X</button> -->
+
       </li>
     </ul>
   </div>
@@ -22,10 +22,16 @@ export default {
   },
   methods:{
     obrisiBlog(index){
+      var odgovor = confirm("Da li ste sigurni da zelite da obrisete blog?")
+        if(odgovor==true)  {
       axios.delete("http://741a121.mars-e1.mars-hosting.com/api/blog",{ params:{id:index} })
       .then(()=>{
         this.poziv();
+
       })
+    }else {
+
+    }
     },
     poziv(){
       axios.get("http://741a121.mars-e1.mars-hosting.com/api/blog")
