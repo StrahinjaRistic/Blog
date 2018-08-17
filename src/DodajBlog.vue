@@ -58,6 +58,6 @@ export default {
    font-weight: bold;
  }
  #aaa{
-   min-height: 470px;
+   min-height: 700px;
  }
 </style>
