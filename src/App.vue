@@ -19,14 +19,13 @@
      <li><a href="#" @click="komp = 'dodajBlog'">Dodaj Blog</a></li>
      <li><a href="#" @click="komp = 'izbrisiBlog'">Izbrisi Blog</a></li>
    </ul>
-
     <div class="container">
     <keep-alive>
       <component :is="komp">
       </component>
     </keep-alive>
     </div>
-    
+
   </div>
 </template>
 
