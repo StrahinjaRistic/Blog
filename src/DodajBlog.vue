@@ -23,7 +23,6 @@ export default {
         }else {
           alert("Popunite text");
         }
-
       } else {
     axios.post("http://741a121.mars-e1.mars-hosting.com/api/blog",{naslov: this.naslov, text: this.text})
     alert("Blog je uspesno dodat!!!");
