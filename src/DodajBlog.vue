@@ -17,10 +17,22 @@ export default {
   },
   methods:{
     dodajBlog(){
+      if((this.naslov == '')||(this.text == '')){
+        if(this.naslov == ''){
+          alert("Popunite naslov");
+        }else {
+          alert("Popunite text");
+        }
+
+      } else {
     axios.post("http://741a121.mars-e1.mars-hosting.com/api/blog",{naslov: this.naslov, text: this.text})
     alert("Blog je uspesno dodat!!!");
-    }
+    this.naslov = '';
+    this.text = '';
   }
+  }
+    }
+
 
 
 }
