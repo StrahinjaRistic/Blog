@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="row">
+  <div class="row" id="aaa">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -54,5 +54,8 @@ export default {
 <style>
  #naslov {
    font-weight: bold;
+ }
+ #aaa{
+   min-height: 470px;
  }
 </style>
