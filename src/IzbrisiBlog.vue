@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="container">
+  <div class="container" id="ab">
     <h2>Blogovi</h2>
     <ul class="collection with-header">
       <li class="collection-header"><h4>Lista blogova</h4></li>
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style>
-.container {
+#ab{
   min-height: 470px;
 }
 </style>
