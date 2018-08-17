@@ -39,6 +39,6 @@ export default {
 
 <style>
 #ab{
-  min-height: 470px;
+  min-height: 700px;
 }
 </style>
