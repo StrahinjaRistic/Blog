@@ -15,17 +15,17 @@
    </nav>
 
    <ul class="sidenav" id="mobile-links">
-     <li><a @click="komp = 'blog'">Prikazi Blogove</a></li>
-     <li><a @click="komp = 'dodajBlog'">Dodaj Blog</a></li>
-     <li><a @click="komp = 'izbrisiBlog'">Izbrisi Blog</a></li>
+     <li><a href="#" @click="komp = 'blog'">Prikazi Blogove</a></li>
+     <li><a href="#" @click="komp = 'dodajBlog'">Dodaj Blog</a></li>
+     <li><a href="#" @click="komp = 'izbrisiBlog'">Izbrisi Blog</a></li>
    </ul>
-
+    <div class="container">
     <keep-alive>
-      <div class="container">
       <component :is="komp">
       </component>
-    </div>
     </keep-alive>
+    </div>
+
   </div>
 </template>
 
