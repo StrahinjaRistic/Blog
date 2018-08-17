@@ -1,10 +1,24 @@
 <template lang="html">
-  <div>
-    <label>Blogovi</label><br>
-      <textarea rows="1" cols="20" v-model="naslov"></textarea><br>
-      <textarea rows="5" cols="50" v-model="text"></textarea>
-      <button @click.prevent="dodajBlog">Dodaj Blog</button>
-  </div>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <input id="naslov" type="text" length="50" class="validate" v-model="naslov"></input>
+          <label for="naslov">Naslov bloga</label>
+       </div>
+     </div><br>
+    <div class="row">
+      <div class="input-field col s12">
+      <i class="material-icons prefix">mode_edit</i>
+      <textarea id="textArea" class="materialize-textarea" data-length="500" v-model="text" ></textarea>
+      <label for="textArea">Blog</label>
+      <button class="btn waves-effect waves-light" type="submit" name="action" @click.prevent="dodajBlog">Dodaj Blog</button>
+
+     </div>
+    </div>
+  </form>
+</div>
 </template>
 
 <script>
@@ -38,5 +52,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
+ #naslov {
+   font-weight: bold;
+ }
 </style>
