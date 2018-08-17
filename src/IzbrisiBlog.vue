@@ -1,7 +1,11 @@
 <template lang="html">
-  <div>
-    <ul>
-      <li v-for="blog in blogList">{{blog.blo_naslov}} <button @click="obrisiBlog(blog.blo_id)">X</button> </li>
+  <div class="container">
+    <h2>Blogovi</h2>
+    <ul class="collection with-header">
+      <li class="collection-header"><h4>Lista blogova</h4></li>
+      <li class="collection-item" v-for="blog in blogList">{{blog.blo_naslov}}<button class="material-icons secondary-content" @click="obrisiBlog(blog.blo_id)">delete</button>
+        <!-- <button @click="obrisiBlog(blog.blo_id)">X</button> -->
+      </li>
     </ul>
   </div>
 </template>
@@ -33,5 +37,8 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
+.container {
+  min-height: 470px;
+}
 </style>
